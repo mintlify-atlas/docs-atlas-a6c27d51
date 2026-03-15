@@ -1,0 +1,102 @@
+{
+  "projectType": "saas",
+  "projectName": "Zoo Arcadia",
+  "projectDescription": "A full-stack PHP zoo management platform with a public-facing website for visitors and a role-based back-office for administrators, veterinarians, and employees.",
+  "theme": "almond",
+  "primaryColor": "#848c8e",
+  "lightColor": "#11161e",
+  "darkColor": "#cfd0d2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/domain-structure",
+              "architecture/routing",
+              "architecture/database"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/animals",
+              "features/habitats",
+              "features/services",
+              "features/testimonials",
+              "features/contact"
+            ]
+          },
+          {
+            "group": "Back-Office",
+            "pages": [
+              "backoffice/overview",
+              "backoffice/admin",
+              "backoffice/veterinarian",
+              "backoffice/employee"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/local",
+              "deployment/environment-variables",
+              "deployment/database-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Overview",
+            "pages": ["api/overview"]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/animals",
+              "api/habitats",
+              "api/services",
+              "api/schedules",
+              "api/testimonials"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Public visitor pages for animals, habitats, and zoo services",
+    "Role-based back-office (Administrator, Veterinarian, Employee)",
+    "Animal health tracking with veterinarian reports",
+    "Feeding logs and nutrition management",
+    "Habitat suggestions and review workflow",
+    "Testimonials moderation system",
+    "REST JSON API for animals, habitats, services, schedules, and testimonials",
+    "Cloudinary image upload integration",
+    "Session-based authentication with CSRF protection",
+    "Docker and local deployment support with MariaDB/MySQL"
+  ],
+  "publicApiSurface": [
+    "GET /api/animals — List all animals",
+    "GET /api/animals/{id} — Get animal by ID",
+    "GET /api/habitats — List all habitats",
+    "GET /api/habitats/{id} — Get habitat by ID",
+    "GET /api/services — List all services",
+    "GET /api/schedules — Get zoo opening schedules",
+    "GET /api/testimonials — Get validated testimonials",
+    "POST /contact/pages/send — Submit contact form",
+    "POST /auth/pages/login — Authenticate user",
+    "POST /testimonials/gest/create — Submit a testimonial"
+  ]
+}
